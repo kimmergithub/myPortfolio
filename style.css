@@ -1,0 +1,68 @@
+/** {
+  border: solid 1px orange;
+}*/
+
+html {
+  background-image: url('img/seattle.jpg');
+  background-size: 100% auto;
+}
+
+#profilePic {
+  margin-top: 378px;
+  margin-left: 60px;
+  max-width: 400px;
+  border: solid 1px;
+}
+
+h1 {
+  display: inline;
+  float: right;
+  margin-top: 100px;
+  margin-right: 70px;
+  font-size: 50px;
+  font-family: serif;
+  font-style: italic;
+}
+
+header {
+  float: right;
+  max-height: 30px;
+  margin-right: 100px;
+}
+
+ul {
+  margin: 0px;
+}
+
+.links {
+  margin-left: 15px;
+}
+
+.socialMedia {
+
+}
+
+.socialMedia, li {
+  display: inline;
+  margin-left: 15px;
+}
+.socialMedia, li, img{
+  max-width: 30px;
+}
+
+div {
+  display: inline;
+  float: right;
+  max-width: 30%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 175px;
+  margin-right: -380px;
+  border: solid 2px;
+
+}
+
+p {
+  height: 400px;
+  overflow: auto;
+  margin: 5px 5px;
+}
