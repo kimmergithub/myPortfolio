@@ -7,3 +7,7 @@
 // going to add css. via javascript as well
 
 // going to add a constructor function to this... and implement notes today.
+
+
+
+// SO BEHIND IN THIS!  I'm sure everyone is, but I'm nearly at a point where I can catch up.
