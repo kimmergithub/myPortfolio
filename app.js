@@ -14,3 +14,13 @@
 
 
 // .... :)    WORKING ON THIS ON SUNDAY WITH EVERYONE... It will all be caught up on and then I'll be happy!
+
+
+function Article (rawDataObj) {
+  this.author = rawDataObj.author;
+  this.authorUrl = rawDataObj.authorUrl;
+  this.title = rawDataObj.title;
+  this.category = rawDataObj.category;
+  this.body = rawDataObj.body;
+  this.publishedOn = rawDataObj.publishedOn;
+}
