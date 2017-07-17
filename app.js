@@ -13,10 +13,8 @@ function Github (rawDataObj) {
 
 // using the template
 Github.prototype.toHtml = function() {
-  // var $newGithub = $('myprojectsList-template').clone();
   var myTemplate = $('#my-template').html();
   var compiled = Handlebars.compile(myTemplate);
-  // $('#articles').append(compile(this));
   return compiled(this);
 };
 
