@@ -2,12 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="Vendors/font-awesome-4.7.0/css/font-awesome.min.css"/> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"></link>
     <link rel="stylesheet" href="reset.css"></link>
     <link rel="stylesheet" href="icon.css"></link>
-    <title>Kimmer O'Reilly</title>
+    <link rel="stylesheet" href="skeleton.css"></link>
+    <link rel="stylesheet" href="normalize.css"></link>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <title>"Kimmer O'Reilly"</title>
   </head>
+
   <body>
     <header>
        <span class="icon-menu"></span>
@@ -22,30 +27,101 @@
           <li><img src="img/twitterIcon.png"/></li>
         </ul>
     </header>
+
     <main>
       <h1>Kimmer O'Reilly</h1>
       <div>
-        <p>
-          Hello, I am a professional software engineer who specializes in Javascript.
-          <br>
-          <br>
-           I am very excited to share with you my experiences, my portfolio, my understanding of software development and web design, and my extensive network of professionals in the programming industry.  Please navigate my website, look at my portfolio, and contact me if you have any questions.
-          <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam enim, ornare laoreet dictum et, dapibus a neque. Duis dapibus id mauris id sollicitudin. Nunc faucibus neque vel pellentesque ornare. Nulla eget vulputate nunc. Nullam quis ex ipsum. Donec lacinia condimentum sagittis. Maecenas pulvinar velit a rutrum facilisis. Donec feugiat accumsan ullamcorper. Praesent volutpat lorem lacus, aliquam gravida est aliquam at. Duis varius ex orci, non feugiat lectus commodo in. Donec malesuada arcu vitae est molestie blandit. Proin mattis in nisl sit amet tristique. Pellentesque pharetra, mi quis consequat luctus, diam neque varius erat, non condimentum felis neque a sapien.
-
-          Nulla vestibulum eleifend erat ut euismod. Sed nibh leo, ullamcorper id sodales sed, volutpat sed erat. Suspendisse vel vestibulum sem. Morbi a metus feugiat, consectetur ex a, accumsan elit. Nulla vitae eros a enim dignissim facilisis nec eu nisi. Integer aliquet tincidunt ligula, id faucibus magna. Nulla tristique orci lacus, quis bibendum lectus bibendum sit amet. Mauris vitae nulla ac sapien luctus porttitor eu eu sem. Vivamus eget nunc sagittis, auctor lacus eu, consectetur est. Morbi bibendum, arcu vel accumsan eleifend, magna mauris cursus libero, vitae sodales libero metus sed metus. Nam felis magna, elementum ac mattis ac, condimentum in neque. Nullam tempus tristique euismod. Aliquam pulvinar dictum sapien sed consequat. Suspendisse dapibus lacus sit amet mauris aliquam pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-          Nunc id libero auctor, euismod orci eget, fermentum ex. Mauris eu nunc semper, ultrices ante ut, vulputate justo. Curabitur rhoncus diam lorem, ut pellentesque lacus ultricies eu. Duis porttitor eros eget velit efficitur laoreet. Nunc et mauris quam. Sed bibendum ullamcorper rhoncus. Nullam at dui a purus ornare consectetur. Ut et neque ac dui imperdiet maximus id a orci. Fusce sit amet lacus libero. Pellentesque a vulputate nisi. Nullam malesuada erat sit amet eleifend ullamcorper. Nulla vitae mi urna. Vestibulum tincidunt nulla magna, et mollis mauris egestas vel.
-
-          Donec dapibus pulvinar libero, et vestibulum mi blandit pulvinar. Nulla aliquet eu eros posuere posuere. Praesent pellentesque ultrices dui, eget condimentum neque eleifend eu. Suspendisse ullamcorper, quam ac tempor egestas, dolor ex sagittis velit, ac eleifend nisi dolor commodo mauris. Nulla egestas leo non tortor maximus, quis placerat magna eleifend. Vivamus eget lorem sit amet quam ornare luctus id ac sapien. Etiam vitae purus erat. Etiam sed nisi placerat, feugiat turpis a, ultrices turpis. Maecenas iaculis nec turpis quis mattis. Vestibulum et eleifend dui. Sed a pharetra metus.
-
-          Maecenas lectus justo, vehicula non magna quis, tincidunt consequat augue. Duis ut elit vel lorem suscipit tincidunt. Quisque et tortor eget nibh auctor interdum. Duis diam felis, elementum id est dapibus, dignissim imperdiet lorem. Nam malesuada posuere rhoncus. In sit amet metus quis ante rhoncus laoreet nec vitae leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In tristique lorem et erat ultricies, in tristique ligula scelerisque. Morbi id varius nisi, vel efficitur arcu.
-        </p>
+        <button class="about-me" type="button" name="button">About Me</button>
+        <button class="blog-button" type="button" name="button">My Blog</button>
+        <button class="projects-button" type="button" name="button">Projects</button>
       </div>
+
+      <article class="about-me">
+        <p id="about-me">
+         Hello, I am a professional software engineer who specializes in Javascript.
+         <br>
+         <br>
+          I am very excited to share with you my experiences, my portfolio, my understanding of software development and web design, and my extensive network of professionals in the programming industry.  Please navigate my website, look at my portfolio, and contact me if you have any questions.
+         <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam enim, ornare laoreet dictum et, dapibus a neque. Duis dapibus id mauris id sollicitudin. Nunc faucibus neque vel pellentesque ornare. Nulla eget vulputate nunc. Nullam quis ex ipsum. Donec lacinia condimentum sagittis. Maecenas pulvinar velit a rutrum facilisis. Donec feugiat accumsan ullamcorper. Praesent volutpat lorem lacus, aliquam gravida est aliquam at. Duis varius ex orci, non feugiat lectus commodo in. Donec malesuada arcu vitae est molestie blandit. Proin mattis in nisl sit amet tristique. Pellentesque pharetra, mi quis consequat luctus, diam neque varius erat, non condimentum felis neque a sapien.
+
+         Nulla vestibulum eleifend erat ut euismod. Sed nibh leo, ullamcorper id sodales sed, volutpat sed erat. Suspendisse vel vestibulum sem. Morbi a metus feugiat, consectetur ex a, accumsan elit. Nulla vitae eros a enim dignissim facilisis nec eu nisi. Integer aliquet tincidunt ligula, id faucibus magna. Nulla tristique orci lacus, quis bibendum lectus bibendum sit amet. Mauris vitae nulla ac sapien luctus porttitor eu eu sem. Vivamus eget nunc sagittis, auctor lacus eu, consectetur est. Morbi bibendum, arcu vel accumsan eleifend, magna mauris cursus libero, vitae sodales libero metus sed metus. Nam felis magna, elementum ac mattis ac, condimentum in neque. Nullam tempus tristique euismod. Aliquam pulvinar dictum sapien sed consequat. Suspendisse dapibus lacus sit amet mauris aliquam pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+         Nunc id libero auctor, euismod orci eget, fermentum ex. Mauris eu nunc semper, ultrices ante ut, vulputate justo. Curabitur rhoncus diam lorem, ut pellentesque lacus ultricies eu. Duis porttitor eros eget velit efficitur laoreet. Nunc et mauris quam. Sed bibendum ullamcorper rhoncus. Nullam at dui a purus ornare consectetur. Ut et neque ac dui imperdiet maximus id a orci. Fusce sit amet lacus libero. Pellentesque a vulputate nisi. Nullam malesuada erat sit amet eleifend ullamcorper. Nulla vitae mi urna. Vestibulum tincidunt nulla magna, et mollis mauris egestas vel.
+
+         Donec dapibus pulvinar libero, et vestibulum mi blandit pulvinar. Nulla aliquet eu eros posuere posuere. Praesent pellentesque ultrices dui, eget condimentum neque eleifend eu. Suspendisse ullamcorper, quam ac tempor egestas, dolor ex sagittis velit, ac eleifend nisi dolor commodo mauris. Nulla egestas leo non tortor maximus, quis placerat magna eleifend. Vivamus eget lorem sit amet quam ornare luctus id ac sapien. Etiam vitae purus erat. Etiam sed nisi placerat, feugiat turpis a, ultrices turpis. Maecenas iaculis nec turpis quis mattis. Vestibulum et eleifend dui. Sed a pharetra metus.
+
+         Maecenas lectus justo, vehicula non magna quis, tincidunt consequat augue. Duis ut elit vel lorem suscipit tincidunt. Quisque et tortor eget nibh auctor interdum. Duis diam felis, elementum id est dapibus, dignissim imperdiet lorem. Nam malesuada posuere rhoncus. In sit amet metus quis ante rhoncus laoreet nec vitae leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In tristique lorem et erat ultricies, in tristique ligula scelerisque. Morbi id varius nisi, vel efficitur arcu.
+       </p>
+      </article>
+
+      <article class="blog">
+        <div class="row">
+          <div class="eleven column">
+            <div id="blog">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </h4>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="row">
+        <div class ="twelve columns"><h2>
+          <div id="projects">
+            <!-- the TEMPLATE-->
+            <script id="my-template" type="text/x-handlebars-template">
+              <li class="projects">
+                <h2> {{title}}</h2>
+                <img src="{{image}}">
+                <h2>{{category}}</h2>
+                <h3> {{date-added}}<h3>
+              </li>
+          </script>
+          </div>
+        </div>
+      </div>
+
       <img id="profilePic" src="img/PROFILE.jpg" />
+
+   <section id="articles" class="tab-content">
+     <div>
+       <ul id="filters">
+         <li>
+           <select id="author-filter">
+             <option value="">-- Filter by Date publishedOn --</option>
+           </select>
+         </li>
+         <li>
+
+       <header>
+         <h1>Title</h1>
+         <div class="byline">
+           By <address><a href="">Author Name</a></address>
+           published <time pubdate datetime="2000-01-01">Publish Time</time>
+         </div>
+       </header>
+   </section>
+   <section id="about" class="tab-content">
+     <header>
+       Hello, this is my blog!
+     </header>
+     <section>
+       <h1>Good stuff it here:</h1>
+       <ul>
+         <li>Coding</li>
+         <li>Sharing what I've learned</li>
+         <li>Hanging with my family</li>
+       </ul>
+     </section>
+   </section>
+
     </main>
+
     <footer>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="rawdata.js" type="text/javascript"></script>
     <script src="app.js" type="text/javascript"></script>
+    <script src="portfolioview.js" type="text/javascript"></script>
   </body>
 </html>
