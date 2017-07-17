@@ -4,6 +4,7 @@ var rawData = [
   {
     title:       'RePONG',
     category:    'Javascript',
+    // ADD AN IMAGE SECTION IN HERE LATER
     author:      'Austin Cohrs, Isaac Heist, Kimmer O\'Reilly, and Chris Stefan',
     authorUrl:   'https://github.com/taxpayer131/Code201_finalProject',
     publishedOn: '2017-06-21',
