@@ -1,8 +1,8 @@
 'use strict';
 
-Github.projectsArray = [];
+GithubRepository.projectsArray = [];
 
-function Github (rawDataObj) {
+function GithubRepository (rawDataObj) {
   this.author = rawDataObj.author;
   this.authorUrl = rawDataObj.authorUrl;
   this.title = rawDataObj.title;
@@ -12,16 +12,29 @@ function Github (rawDataObj) {
 }
 
 // using the template
-Github.prototype.toHtml = function() {
+GithubRepository.prototype.toHtml = function() {
   var myTemplate = $('#my-template').html();
   var compiled = Handlebars.compile(myTemplate);
   return compiled(this);
 };
 
 rawData.forEach(function(projectObject) {
-  Github.projectsArray.push(new Github(projectObject));
+  GithubRepository.projectsArray.push(new GithubRepository(projectObject));
 });
 
-Github.projectsArray.forEach(function(Github) {
-  $('#projects').append(Github.toHtml());
+GithubRepository.projectsArray.forEach(function(GithubRepository) {
+  $('#projects').append(GithubRepository.toHtml());
 });
+
+GithubRepository.projectsArray.fetchAll = function (){
+  if (localStorage.rawData) {
+    GithubRepository.projectsArray.loadAll(JSON.parse(localStorage.getItem('rawData')));
+  } else {
+    $.getJSON('./rawdata.json')
+    .then( function(data) {
+      localStorage.setItem('rawdata', JSON.stringify(data));
+      GithubRepository.projectsArray.loadAll(JSON.parse(localStorage.getItem('rawdata')));
+    },
+    console.log('error')
+  )}
+};
