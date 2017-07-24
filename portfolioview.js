@@ -1,5 +1,13 @@
 'use strict';
 
+// hamburger menu function
+$(function() {
+  $('.icon-menu').on('click', function(e) {
+    e.preventDefault();
+    $('#links').slideToggle();
+  });
+});
+
 $(function() {
 
     // Project visibility --> click actions
