@@ -3,7 +3,7 @@
 }*/
 
 html {
-  background-image: url('img/seattle.jpg');
+  background-image: url('./img/seattle.jpg');
   background-size: 100% auto;
 }
 
